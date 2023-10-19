@@ -4,8 +4,7 @@ public class Application {
     public static void main(String[] args) {
         System.out.println();
         Kotik cat1 = new Kotik("Barsik", 4.4, "meow");
-        cat1.newCatHere();
-        cat1.liveAnotherDay();
+        cat1.printNewCatInfo();
 
         System.out.println();
 
@@ -13,8 +12,8 @@ public class Application {
         cat2.setName("Tom");
         cat2.setWeight(3.11);
         cat2.setMeow("me" + "ow");
-        cat2.setIsHungry();
-        cat2.newCatHere();
+        cat2.setSatietyLevel((int) (Math.random() * 10));
+        cat2.printNewCatInfo();
         cat2.liveAnotherDay();
 
         System.out.println();
