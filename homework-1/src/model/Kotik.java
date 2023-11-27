@@ -90,19 +90,19 @@ public class Kotik {
     }
 
     // 3 перегруженных метода для кормления:
+   public void eat() {
+        eat(1 + (int) (Math.random() * 5), "Sheba"); // покормить кота на 1-5 единиц
+    }
+    
+    public void eat(int satietyLevel) {
+        eat(satietyLevel, "Sheba");
+    }
+    
     public void eat(int satietyLevel, String meal) {
         this.satietyLevel += satietyLevel;
         System.out.println("He took his meal \"" + meal + "\" and now is satisfied for " + satietyLevel + ".");
     }
-
-    public void eat(int satietyLevel) {
-        eat(satietyLevel, "Sheba");
-    }
-
-    public void eat() {
-        eat(1 + (int) (Math.random() * 5), "Sheba"); // покормить кота на 1-5 единиц
-    }
-
+    
     public void liveAnotherDay() {
         for (int hour = 0; hour < 24; hour++) {
             String currentHour = String.format("%02d", hour);
