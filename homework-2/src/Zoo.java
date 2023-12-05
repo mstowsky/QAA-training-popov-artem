@@ -31,14 +31,20 @@ public class Zoo {
         System.out.println();
         worker1.getVoice(lion1);
         worker1.getVoice(cow1);
-        // worker1.getVoice(fish1); //рыба не разговаривает, поэтому при компилляции ошибка "incompatible types: animals.Fish cannot be converted to animals.Voiceable"
+        //worker1.getVoice(fish1); //рыба не разговаривает, поэтому при компилляции ошибка "incompatible types: animals.Fish cannot be converted to animals.Voiceable"
         worker1.getVoice(duck1);
         worker1.getVoice(snake1);
-        // worker1.getVoice(squirrel1); //белка не разговаривает, поэтому при компилляции ошибка "incompatible types: animals.FlyingSquirrel cannot be converted to animals.Voiceable"
+        //worker1.getVoice(squirrel1); //белка не разговаривает, поэтому при компилляции ошибка "incompatible types: animals.FlyingSquirrel cannot be converted to animals.Voiceable"
 
         System.out.println();
-        duck1.run();
+        //животное бегает
+        lion1.run();
         squirrel1.run();
+
+        System.out.println();
+        //животное летает
+        duck1.fly();
+        squirrel1.fly();
 
         System.out.println();
         Swimable[] lake = new Swimable[]{duck1, fish1};
