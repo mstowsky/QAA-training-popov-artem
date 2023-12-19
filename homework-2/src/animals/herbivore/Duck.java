@@ -1,4 +1,8 @@
-package animals;
+package animals.herbivore;
+
+import animals.interfaces.Flyable;
+import animals.interfaces.Swimable;
+import animals.interfaces.Voiceable;
 
 public class Duck extends Herbivore implements Flyable, Runnable, Swimable, Voiceable {
 

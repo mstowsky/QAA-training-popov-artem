@@ -1,4 +1,7 @@
-package animals;
+package animals.carnivorous;
+
+import animals.interfaces.Runable;
+import animals.interfaces.Voiceable;
 
 public class Lion extends Carnivorous implements Runable, Voiceable {
 

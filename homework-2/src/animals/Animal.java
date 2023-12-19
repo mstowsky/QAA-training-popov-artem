@@ -5,7 +5,7 @@ import food.Food;
 public abstract class Animal {
 
     private final String name;
-    private int satietyLevel;
+    protected int satietyLevel;
 
     public Animal(String name, int satietyLevel) {
         this.name = name;

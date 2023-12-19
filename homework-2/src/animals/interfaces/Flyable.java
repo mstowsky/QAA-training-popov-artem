@@ -1,4 +1,4 @@
-package animals;
+package animals.interfaces;
 
 public interface Flyable {
     void fly();

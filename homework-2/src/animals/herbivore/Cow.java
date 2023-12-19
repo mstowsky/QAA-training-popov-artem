@@ -1,4 +1,7 @@
-package animals;
+package animals.herbivore;
+
+import animals.interfaces.Runable;
+import animals.interfaces.Voiceable;
 
 public class Cow extends Herbivore implements Runable, Voiceable {
 

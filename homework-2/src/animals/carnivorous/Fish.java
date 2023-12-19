@@ -1,4 +1,6 @@
-package animals;
+package animals.carnivorous;
+
+import animals.interfaces.Swimable;
 
 public class Fish extends Carnivorous implements Swimable {
 

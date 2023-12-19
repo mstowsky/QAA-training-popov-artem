@@ -1,4 +1,6 @@
-package animals;
+package animals.carnivorous;
+
+import animals.interfaces.Voiceable;
 
 public class Snake extends Carnivorous implements Voiceable {
 

@@ -1,5 +1,6 @@
-package animals;
+package animals.herbivore;
 
+import animals.Animal;
 import food.Food;
 import food.Plant;
 

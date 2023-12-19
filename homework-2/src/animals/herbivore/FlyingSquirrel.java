@@ -1,4 +1,7 @@
-package animals;
+package animals.herbivore;
+
+import animals.interfaces.Flyable;
+import animals.interfaces.Runable;
 
 public class FlyingSquirrel extends Herbivore implements Flyable, Runable {
 

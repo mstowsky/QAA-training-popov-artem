@@ -1,9 +1,11 @@
-import animals.*;
+import animals.carnivorous.*;
+import animals.herbivore.*;
+import animals.interfaces.*;
 import food.Meat;
 import food.Plant;
 
 public class Zoo {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         System.out.println();
 
         Lion lion1 = new Lion("Simba", (int) (Math.random() * 20)); //создать льва (плотоядное)
@@ -31,10 +33,10 @@ public class Zoo {
         System.out.println();
         worker1.getVoice(lion1);
         worker1.getVoice(cow1);
-        //worker1.getVoice(fish1); //рыба не разговаривает, поэтому при компилляции ошибка "incompatible types: animals.Fish cannot be converted to animals.Voiceable"
+        //worker1.getVoice(fish1); //рыба не разговаривает, поэтому при компилляции ошибка "incompatible types: animals.Carnivorous.Fish cannot be converted to animals.interfaces.Voiceable"
         worker1.getVoice(duck1);
         worker1.getVoice(snake1);
-        //worker1.getVoice(squirrel1); //белка не разговаривает, поэтому при компилляции ошибка "incompatible types: animals.FlyingSquirrel cannot be converted to animals.Voiceable"
+        //worker1.getVoice(squirrel1); //белка не разговаривает, поэтому при компилляции ошибка "incompatible types: animals.Herbivore.Herbivore.FlyingSquirrel cannot be converted to animals.interfaces.Voiceable"
 
         System.out.println();
         //животное бегает
